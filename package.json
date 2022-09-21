@@ -1,0 +1,23 @@
+{
+  "name": "main-content-server",
+  "version": "1.0.0",
+  "description": "Server for storing image and file specially created for chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samirgoel3/Main-Content-Server.git"
+  },
+  "author": "Samir Goel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samirgoel3/Main-Content-Server/issues"
+  },
+  "homepage": "https://github.com/samirgoel3/Main-Content-Server#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
