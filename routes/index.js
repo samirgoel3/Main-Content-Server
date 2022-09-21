@@ -1,5 +1,5 @@
-// const apiRoutes = require('./apis');
-// const express = require("express");
+const apiRoutes = require('./apis');
+const express = require("express");
 
 const init = (server) => {
 
@@ -10,10 +10,10 @@ const init = (server) => {
 
 
     server.get('/', (req, res)=>{
-        res.send('Hi I am CONTENT SERVER, and i will save file and provide urls.')
+        res.send('Hi I am CONTENT SERVER, and i will save file and provide urls. updated with new configuration')
     })
 
-    // server.use('/api', apiRoutes);
+    server.use('/api', apiRoutes);
 
 };
 
