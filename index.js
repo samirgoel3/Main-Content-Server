@@ -1,5 +1,5 @@
 const express = require('express');
-// const route = require('./routes')
+const route = require('./routes')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -42,16 +42,10 @@ serverApp.set('hostname', 'localhost');
 
         serverApp.use('/images', express.static(path.join(__dirname, '../images')));
 
+    
+        route.init(serverApp)
 
-        serverApp.use('*', (req, res, next) => {
-            console.log('Request was made to : ' + req.method + " -> " + req.originalUrl+ '\n*******************');
-            next();
-        });
-    
-    
-        serverApp.get('/', (req, res)=>{
-            res.send('Hi I am CONTENT SERVER, and i will save file and provide url :). ')
-        })
+      
 
 
         // starting server
