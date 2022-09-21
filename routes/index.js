@@ -10,7 +10,7 @@ const init = (server) => {
 
 
     server.get('/', (req, res)=>{
-        res.send('Hi I am CONTENT SERVER, and i will save file and provide urls. updated with new configuration')
+        res.send('Hi I am CONTENT SERVER, and i will save file and provide urls.')
     })
 
     server.use('/api', apiRoutes);
