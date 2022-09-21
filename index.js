@@ -42,7 +42,8 @@ mongoose.connect('mongodb+srv://MainClusture:94QikJPKmTndGaE3@mainclusture.l3f41
     .then((res) => { console.log('#####---> Mongo DB Connected!'); })
     .catch(err => { console.log("####----> Mongo Db not Connected" + err); });
 
-serverApp.use('/images', express.static(path.join(__dirname, '../images')));
+    
+serverApp.use('/images', express.static(path.join(__dirname, './images')));
 
 
 route.init(serverApp)
